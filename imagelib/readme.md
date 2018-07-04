@@ -44,3 +44,26 @@ imsave(image)
 resize(image, (hx, hy))
 
 ```
+
+## Python Image Library (PIL)
+
+```python
+from PIL import Image
+from io import BytesIO
+import requests
+
+# Open an image from url
+image = Image.open(BytesIO(requests.get(url).content))
+
+# saving an Image instance
+image.save('filename.ext')
+
+# Show in an window
+image.show()
+
+# Resize / transform
+image.resize((shape))
+
+```
+
+considering the ease and readability, PIL is go to choice for basic image manipulations. However, I'm not commenting on speed-wise performance of these libraries.
