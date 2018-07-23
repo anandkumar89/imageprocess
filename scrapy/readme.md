@@ -16,7 +16,6 @@ response.css('css selector::text').extract() / .extract_first()
 
 Available commands for scrapy:
 
-Available commands:
 ``bench       ``  Run quick benchmark test
 ``check       ``  Check spider contracts
 ``crawl       ``  Run a spider
@@ -31,6 +30,15 @@ Available commands:
 ``startproject``  Create new project
 ``version     ``  Print Scrapy version
 ``view        ``  Open URL in browser, as seen by Scrapy
+
+### Create a project
+> $ scrapy startproject project_name
+> $ cd project_name
+> $ scrapy genspider spider_name www.example.com/
+
+Now, go edit parse function for spider in spider directory to extract desired data from response and yeild a generator as desired.
+
+``custom_settings = {FEED_FORMAT:"csv/json/xml", FEED_URI:"file_name"}`` can be set.
 
 
 ---
