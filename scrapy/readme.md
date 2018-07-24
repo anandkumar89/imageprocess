@@ -16,25 +16,26 @@ response.css('css selector::text').extract() / .extract_first()
 
 Available commands for scrapy:
 
-``bench       ``  Run quick benchmark test
-``check       ``  Check spider contracts
-``crawl       ``  Run a spider
-``edit        ``  Edit spider
-``fetch       ``  Fetch a URL using the Scrapy downloader
-``genspider   ``  Generate new spider using pre-defined templates
-``list        ``  List available spiders
-``parse       ``  Parse URL (using its spider) and print the results
-``runspider   ``  Run a self-contained spider (without creating a project)
-``settings    ``  Get settings values
-``shell       ``  Interactive scraping console
-``startproject``  Create new project
-``version     ``  Print Scrapy version
-``view        ``  Open URL in browser, as seen by Scrapy
+``bench       ``  Run quick benchmark test                                 
+``check       ``  Check spider contracts 
+``crawl       ``  Run a spider 
+``edit        ``  Edit spider 
+``fetch       ``  Fetch a URL using the Scrapy downloader 
+``genspider   ``  Generate new spider using pre-defined templates 
+``list        ``  List available spiders 
+``parse       ``  Parse URL (using its spider) and print the results 
+``runspider   ``  Run a self-contained spider (without creating a project) 
+``settings    ``  Get settings values 
+``shell       ``  Interactive scraping console 
+``startproject``  Create new project 
+``version     ``  Print Scrapy version 
+``view        ``  Open URL in browser, as seen by Scrapy 
 
 ### Create a project
-> $ scrapy startproject project_name
-> $ cd project_name
-> $ scrapy genspider spider_name www.example.com/
+
+> $ scrapy startproject project_namei 
+> $ cd project_name 
+> $ scrapy genspider spider_name www.example.com/ 
 
 Now, go edit parse function for spider in spider directory to extract desired data from response and yeild a generator as desired.
 
